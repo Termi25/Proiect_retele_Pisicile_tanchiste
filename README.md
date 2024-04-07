@@ -1,4 +1,4 @@
-# Executia paralela la distanta:
+# Server si client pentru Executia paralela la distanta:
 
 ## Comunicare broadcast:
 1. Acesti clienti notifica la randul lor clientii lor cu privire la intrare unui nou client in cluster;

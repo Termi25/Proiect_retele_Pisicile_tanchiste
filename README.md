@@ -1,6 +1,6 @@
-#Executia paralela la distanta:
+# Executia paralela la distanta:
 
-##Comunicare broadcast:
+## Comunicare broadcast:
 Acesti clienti notifica la randul lor clientii lor cu privire la intrare unui nou client in cluster;
 
 Server-ul la care se conecteaza un client notifica restul clientilor conectati cu privire la adresa si portul unde poate fi contactat clientul acceptat;
@@ -13,7 +13,7 @@ precum si server-ul la care e el conectat, care atunci cand primeste notificarea
 Cand server-ul a obtinut rezultatul in urma executiei unui fir, il trimite clientului si notifica toti clientii conectati la el pentru actualizarea gradului sau de incarcare, 
 acestia notificand la randul lor clientii conectati la ei;
 
-##Procesare/comunicare client-server propriu-zisa:
+## Procesare/comunicare client-server propriu-zisa:
 
 Cand un client se deconecteaza, server-ul la care e conectat notifica toti clientii conectati la el, care la randul lor isi notifica si ei clientii conectati la ei.
 

@@ -1,6 +1,8 @@
 import socket
 import threading
 
+
+# Function to receive messages from the server
 def receive_messages(sock):
     while True:
         try:
@@ -42,17 +44,15 @@ def main():
                                 print("Invalid numbers in coordinates.")
                         else:
                             print("Invalid format. Use latitude,longitude")
-
+                
                 point1 = get_coordinates()
                 client.send(point1.encode("utf-8"))
-
+                
                 point2 = get_coordinates()
                 client.send(point2.encode("utf-8"))
             else:
                 client.send(message.encode("utf-8"))
     finally:
         client.close()
-
-
 if __name__ == "__main__":
     main()
